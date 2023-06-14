@@ -1,4 +1,7 @@
 RewriteEngine On
 
+# Exclude the public directory from rewriting
+RewriteRule ^resources/ - [L]
+
 # Redirect all requests to index.php
 RewriteRule ^(.*)$ public/index.php [L]

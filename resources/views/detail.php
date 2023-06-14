@@ -1,16 +1,7 @@
 <?php
-/*
-include_once 'init.php';
-include_once 'Product.php';
-if (isset($_GET['id'])) {
-    $productID = $_GET['id'];
+if ($single_product) {
 
-
-    $product = new Product($db);
-    $stmt = $product->getOne($productID);
-
-
-    $product = $stmt->fetch(PDO::FETCH_ASSOC);
+    $product = $single_product->fetch(PDO::FETCH_ASSOC);
     if ($product) {
         // Display the product details
         echo "Product ID: " . $product['id'] . "<br>";
@@ -24,7 +15,6 @@ if (isset($_GET['id'])) {
 } else {
     echo "No product ID specified.";
 }
-*/
+
 
 ?>
-<h1>hi</h1>

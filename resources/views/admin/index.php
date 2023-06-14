@@ -1,22 +1,3 @@
-<?php
-include '../init.php';
-include 'admin.php';
-
-$admin = new Admin($db);
-
-if (!$admin->isLoggedIn()){
-    header('Location: login.php');
-    exit();
-}
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if (isset($_POST['logout'])) {
-        $admin->logout();
-    }
-}
-
-?>
-
 
 <!DOCTYPE html>
 <html>
@@ -27,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <h1>Welcome, Admin!</h1>
     <!-- Add your admin page content here -->
 
-    <form method="post" action="">
+    <form method="post" action="admin/logout">
         <button type="submit" name="logout">Logout</button>
 </form>
 </body>
