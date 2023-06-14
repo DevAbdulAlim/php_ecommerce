@@ -1,3 +1,14 @@
+# Disable directory browsing
+Options -Indexes
+
+# Redirecting all custom error tempate to router
+ErrorDocument 400 /others/php_ecommerce/public/index.php
+ErrorDocument 401 /others/php_ecommerce/public/index.php
+ErrorDocument 403 /others/php_ecommerce/public/index.php
+ErrorDocument 404 /others/php_ecommerce/public/index.php
+ErrorDocument 500 /others/php_ecommerce/public/index.php
+
+# Enable RewriteEngine
 RewriteEngine On
 
 # Exclude the public directory from rewriting

@@ -6,5 +6,6 @@
 </head>
 <body>
     Welcome
+    <img src="<?php echo BASE_DIR; ?>resources/img/logo.jpg" alt="">
 </body>
 </html>

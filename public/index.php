@@ -11,7 +11,7 @@ $staticBasePath = __DIR__ . '/../resources';
 
 // Check if the requested URI points to a static file
 $staticFilePath = $staticBasePath . $requestUri;
-if (file_exists($staticFilePath) && is_file($staticFilePath)) {
+if (strpos($requestUri, '/resources/') === 0 && file_exists($staticFilePath) && is_file($staticFilePath)) {
     // Determine the MIME type of the file
     $mimeTypes = [
         'css' => 'text/css',
@@ -55,14 +55,45 @@ if ($route) {
             $controller->$methodName();
         } else {
             // Handle controller class not found
+            header('HTTP/1.0 404 Not Found');
             echo '404 - Controller class not found';
         }
     } else {
         // Handle controller file not found
+        header('HTTP/1.0 404 Not Found');
         echo '404 - Controller file not found';
     }
 } else {
-    // Handle 404 - Route not found
-    echo '404 - Page not found';
+    // Handle other error codes
+    $errorCode = http_response_code();
+
+    switch ($errorCode) {
+        case 400:
+            // Handle 400 Bad Request error
+            header('HTTP/1.0 400 Bad Request');
+            echo '400 - Bad Request';
+            break;
+        case 401:
+            // Handle 401 Unauthorized error
+            header('HTTP/1.0 401 Unauthorized');
+            echo '401 - Unauthorized';
+            break;
+        case 403:
+            // Handle 403 Forbidden error
+            header('HTTP/1.0 403 Forbidden');
+            echo '403 - Forbidden';
+            break;
+        case 500:
+            // Handle 500 Internal Server Error
+            header('HTTP/1.0 500 Internal Server Error');
+            echo '500 - Internal Server Error';
+            break;
+        default:
+            // Handle 404 - Route not found
+            header('HTTP/1.0 404 Not Found');
+            echo '404 - Page not found';
+            break;
+    }
 }
+
 ?>
