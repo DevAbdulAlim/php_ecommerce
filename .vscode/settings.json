@@ -1,0 +1,4 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "rifi2k.format-html-in-php"
+}

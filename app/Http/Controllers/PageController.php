@@ -21,6 +21,7 @@ class PageController {
     }
     
     public function home() {
+        $title = "Home";
         require_once PAGE_DIR . 'index.php';
     }
 

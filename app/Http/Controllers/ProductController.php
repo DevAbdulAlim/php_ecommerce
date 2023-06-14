@@ -1,16 +1,20 @@
 <?php
-define('PAGE_DIR', __DIR__. '/../../../resources/views/');
+define('PAGE_DIR', __DIR__ . '/../../../resources/views/');
 require_once __DIR__ . '/../../Models/Product.php';
 
-class ProductController {
+class ProductController
+{
     private $productModel;
 
-    public function __construct($db) {
+    public function __construct($db)
+    {
         // Create an instance of the Productmodel and pass database connection 
         $this->productModel = new Product($db);
     }
 
-    public function getAll() {
+    public function getAll()
+    {
+        $title = "Products";
         // Retrieve all products using the Product model
         $products = $this->productModel->getAllProducts();
 
@@ -18,10 +22,11 @@ class ProductController {
         require_once PAGE_DIR . 'products.php';
     }
 
-    public function getSingle() {
+    public function getSingle()
+    {
         $single_product = null;
         // Getting the product id to find it
-        if(isset($_GET['id'])) {
+        if (isset($_GET['id'])) {
             $id = $_GET['id'];
 
             // Retrieve a single product using the Product model
