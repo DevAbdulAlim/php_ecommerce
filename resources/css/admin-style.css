@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  body.open-menu {
+    overflow-x: hidden;
+  }
+  
+  header {
+    background-color: hsl(219, 100%, 97%);
+    color: black;
+  }
+  .logo {
+    padding: 1rem;
+  }
+  .logo img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+  .logo-title {
+    display: block;
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: cursive;
+   
+  }
+  .search-bar {
+    position: relative;
+  }
+  .search-bar input {
+    padding-left: 2rem;
+  }
+  .search-bar i {
+    font-size: 0.8rem;
+    vertical-align: middle;
+      position: absolute;
+      top: 50%;
+      left: 1rem;
+     
+      transform: translate(-50%, -50%);
+  }
+  
+  .move-right {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .big-navbar {
+    margin-left: 250px;
+  
+    
+  }
+  main {
+    margin-left: 250px;
+  }
+  
+  
+  .open-nav {
+    position: fixed !important;
+    width: 250px !important;
+  
+   
+  }
+  
+  
+   
+  
+  
+      .slidenav {
+       
+        height: 100%;
+        width: 0;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        overflow-x: hidden;
+        background-color:#0E2954;
+        transition: width 0.5s ease-in-out;
+        
+      }
+  
+  
+      nav {
+        position: relative;
+       
+  
+      }
+  
+      nav ul {
+        list-style-type: none;
+        line-height: 2;
+        padding: 0;
+      
+      }
+     
+  
+      nav ul a {
+        text-decoration: none;
+       
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding: 5px 15px;
+        color: rgb(203, 202, 204);
+        border-radius: 10px;
+     
+      }
+      nav ul a:hover {
+        color: rgb(218, 218, 218);
+        background: #113f8a;
+        margin-left: 10px;
+      }
+      .mydropdown a {
+        height: initial;
+      }
+  
+      .mydropdown .mydropdown-content {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        z-index: 1;
+        padding-top: 20px;
+        background-color: rgb(14 41 84);
+        animation: slideInRight 0.3s forwards;
+      }
+  
+      .mydropdown-content.show {
+        display: block;
+        animation: slideInRight 0.3s forwards;
+  
+      }
+  
+      .mydropdown-content.hide {
+        animation: slideOutLeft 0.3s forwards;
+      }
+  
+      @keyframes slideInRight {
+        0% {
+          transform: translateX(100%);
+        }
+  
+        100% {
+          transform: translateX(0);
+        }
+      }
+  
+      @keyframes slideOutLeft {
+        0% {
+          transform: translateX(0);
+        }
+  
+        100% {
+          transform: translateX(100%);
+        }
+      }
+  
+  
+      @media (max-width: 992px) {
+        .big-navbar {
+          margin-left: 0;
+        }
+        main {
+          margin-left: 0;
+        }
+        .slidenav {
+          position: absolute;
+          width: 0;
+        }      
+        
+      }
+      @media (min-width: 993px) {
+        .big-navbar {
+          margin-left: 250px;
+        }
+        main {
+          margin-left: 250px;
+        }
+        .slidenav {
+          position: fixed;
+          width: 250px;
+        }      
+  
+        
+      }
+  
+  
+  
+      /* ------------------------------------------ DASHBOARD ----------------------------------------------------- */
+  .total-card {
+    color:#0E2954 ;
+    border: none;
+    background-color: whitesmoke;
+  }
+  .total-card i {
+    font-size: 2rem;
+  }

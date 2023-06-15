@@ -30,6 +30,7 @@ class PageController {
     }
 
     public function adminHome() {
+        $title = "Dashboard";
         if($this->auth->authenticate()) {
             require_once PAGE_DIR . 'admin/index.php';
         } else {
@@ -57,5 +58,3 @@ class PageController {
         header('Location:' . BASE_DIR . 'admin/login');
     }
 }
-
-?>
