@@ -35,9 +35,7 @@ $pageRoutes = [
     BASE_DIR . 'admin/logout' => 'PageController@adminLogout',
 ];
 
+
 $routes = $productRoutes + $userRoutes + $orderRoutes + $pageRoutes;
 
 return $routes;
-
-
-?>

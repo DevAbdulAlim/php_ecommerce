@@ -1,5 +1,5 @@
 <?php
-define('BASE_DIR', '/others/php_ecommerce/');
+define('BASE_DIR', '/php_ecommerce/');
 
 include_once '../config/database.php';
 
@@ -95,5 +95,3 @@ if ($route) {
             break;
     }
 }
-
-?>

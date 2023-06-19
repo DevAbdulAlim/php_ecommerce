@@ -93,18 +93,16 @@
 
                 <form class="d-none d-lg-flex w-50" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
+
                 </form>
                 <form class="d-none d-md-flex d-lg-none" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
+
                 </form>
                 <div class="d-none d-md-flex flex-nowrap">
-                    <a class="nav-link me-4" href=""><i class="fa-solid fa-cart-shopping p-2"></i>Cart</a>
+                    <a class="nav-link me-4" href="" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i
+                            class="fa-solid fa-cart-shopping p-2"></i>Cart</a>
 
                     <a class="nav-link" href=""><i class="fa-solid fa-user p-2"></i>Profile</a>
                 </div>
