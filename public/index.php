@@ -1,5 +1,5 @@
 <?php
-define('BASE_DIR', '/php_ecommerce/');
+define('BASE_DIR', '/project/php_ecommerce/');
 
 include_once '../config/database.php';
 
