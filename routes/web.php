@@ -12,6 +12,15 @@ $productRoutes = [
 ];
 
 $userRoutes = [
+    BASE_DIR . 'user' => 'UserController@dashboard',
+    BASE_DIR . 'user/orders' => 'UserController@orders',
+    BASE_DIR . 'user/wishlist' => 'UserController@wishlist',
+    BASE_DIR . 'user/address' => 'UserController@address',
+    BASE_DIR . 'user/payments' => 'UserController@payments',
+    BASE_DIR . 'user/returns' => 'UserController@returns',
+    BASE_DIR . 'user/reviews' => 'UserController@reviews',
+    BASE_DIR . 'user/profile' => 'UserController@profile',
+    BASE_DIR . 'user/delete' => 'UserController@delete',
     BASE_DIR . 'admin/users' => 'UserController@getAll',
     BASE_DIR . 'admin/user/create/' => 'UserController@createSingle',
     BASE_DIR . 'admin/user/update/' => 'UserController@updateSingle',

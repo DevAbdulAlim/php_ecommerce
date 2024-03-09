@@ -24,7 +24,8 @@
         <nav class="navbar bg-body-tertiary shadow-sm">
             <div class="container flex-nowrap">
                 <div class="d-flex">
-                    <a class="navbar-brand" href="<?php echo BASE_DIR ?>"><i class="fa-brands fa-shopify"></i>shopify</a>
+                    <a class="navbar-brand" href="<?php echo BASE_DIR ?>"><i
+                            class="fa-brands fa-shopify"></i>shopify</a>
 
                     <div class="d-none d-md-block">
                         <button id="myDropdownBtn" onclick="myDropdown()" class="btn btn-light">
@@ -104,7 +105,8 @@
                         data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i
                             class="fa-solid fa-cart-shopping p-2"></i>Cart</a>
 
-                    <a class="nav-link" href=""><i class="fa-solid fa-user p-2"></i>Profile</a>
+                    <a class="nav-link" href="<?php echo BASE_DIR ?>user"><i
+                            class="fa-solid fa-user p-2"></i>Profile</a>
                 </div>
             </div>
         </nav>

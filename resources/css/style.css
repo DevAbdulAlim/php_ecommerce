@@ -154,62 +154,6 @@ main {
 
 /* END GLOBAL CSS */
 
-.form-wrapper {
-  margin: 0 auto;
-  margin-top: 100px;
-  width: 400px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  padding: 2rem;
-  border-radius: 10px;
-  background-color: white;
-  border-top: 5px solid rgb(19, 206, 206);
-}
-
-#custom-form h1 {
-  text-align: center;
-  color: rgb(19, 206, 206);
-}
-
-#custom-form input[type="email"],
-#custom-form input[type="text"],
-#custom-form textarea,
-#custom-form input[type="password"] {
-  min-width: 300px;
-  width: 100%;
-  padding: 15px;
-  border: none;
-  border-radius: 5px;
-  color: rgb(17, 128, 136);
-  background-color: rgb(210, 246, 246);
-  font-size: 1rem;
-}
-#custom-form input[type="email"]:focus,
-#custom-form input[type="text"]:focus,
-#custom-form textarea:focus,
-#custom-from input[type="password"]:focus {
-  border-bottom: 3px solid rgb(19, 206, 206);
-  outline: none;
-}
-
-#custom-form input[type="submit"] {
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  color: white;
-  background-color: rgb(19, 206, 206);
-  font-size: 1rem;
-}
-
-#custom-from input[type="submit"]:hover {
-  color: white;
-  background-color: rgb(9, 172, 172);
-  cursor: pointer;
-}
-
-#custom-form .form_item {
-  padding: 15px;
-}
-
 /* Navbar */
 .myDropdown {
   position: absolute;
@@ -223,7 +167,7 @@ main {
 .show {
   display: flex;
 }
-.active {
+.myDropdown .active {
   background-color: #f8f9fa !important;
   border-left: 5px solid blue !important;
 }
@@ -284,3 +228,28 @@ main {
   text-decoration: underline;
 }
 /* --------------END FOOTER---------------- */
+
+/* ================================== User Account =================================== */
+#sidebar {
+  background-color: #f8f9fa;
+  padding: 20px;
+  height: 100%;
+}
+
+.sidebar-header h3 {
+  color: #333;
+}
+
+.list-unstyled li {
+  margin-bottom: 10px;
+  line-height: 2;
+}
+
+.list-unstyled li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.list-unstyled li a:hover {
+  color: #007bff;
+}
