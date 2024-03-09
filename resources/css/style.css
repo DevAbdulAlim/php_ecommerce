@@ -1,4 +1,4 @@
-/* CSS Reset */
+/* START CSS RESET */
 html,
 body,
 div,
@@ -103,12 +103,6 @@ section {
   display: block;
 }
 
-/* ---------- */
-
-* {
-  box-sizing: border-box;
-}
-
 body {
   line-height: 1;
 }
@@ -136,6 +130,14 @@ table {
   border-spacing: 0;
 }
 
+/* END CSS RESET */
+
+/* START GLOBAL CSS */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -146,10 +148,11 @@ main {
   flex-grow: 1;
 }
 
-/* Login Form */
 ::placeholder {
   color: rgb(140, 177, 180);
 }
+
+/* END GLOBAL CSS */
 
 .form-wrapper {
   margin: 0 auto;
@@ -248,6 +251,23 @@ main {
   text-decoration: none;
   color: black;
 }
+
+/* ------------START HERO SECTION------------ */
+.hero-section {
+  background-image: url("https://via.placeholder.com/1500x600");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+.hero-content {
+  max-width: 600px;
+}
+/* ------------END HERO SECTION------------ */
 
 /* --------------START FOOTER---------------- */
 .footer-links {

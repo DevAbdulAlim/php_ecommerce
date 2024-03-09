@@ -35,6 +35,17 @@ class PageController
         require_once PAGE_DIR . 'contact.php';
     }
 
+    public function Login()
+    {
+        require_once PAGE_DIR . 'login.php';
+    }
+
+    public function Register()
+    {
+        require_once PAGE_DIR . 'register.php';
+    }
+
+
     public function adminHome()
     {
         $title = "Dashboard";

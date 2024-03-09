@@ -1,6 +1,6 @@
 <?php include 'includes/header.php'; ?>
 
-<main class="container mt-4">
+<main class="container my-4">
     <div class="row">
         <div class="col-md-6 offset-md-3">
 

@@ -23,8 +23,8 @@
             <div class="col-md-3 mb-3">
                 <h5 class="fs-4  mb-3"> My Account</h5>
                 <ul class="footer-links">
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> Login</a></li>
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> Register</a></li>
+                    <li><a href="<?php echo BASE_DIR ?>login"><i class="fas fa-chevron-right"></i> Login</a></li>
+                    <li><a href="<?php echo BASE_DIR ?>register"><i class="fas fa-chevron-right"></i> Register</a></li>
                     <li><a href="#"><i class="fas fa-chevron-right"></i> My Orders</a></li>
                     <li><a href="#"><i class="fas fa-chevron-right"></i> Wishlist</a></li>
                 </ul>
