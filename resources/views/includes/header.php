@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="sticky-top">
         <nav class="navbar bg-body-tertiary shadow-sm">
             <div class="container flex-nowrap">
                 <div class="d-flex">
@@ -103,10 +103,27 @@
                 <div class="d-none d-md-flex flex-nowrap">
                     <a class="nav-link me-4" href="" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i
-                            class="fa-solid fa-cart-shopping p-2"></i>Cart</a>
+                            class="fa-solid fa-cart-shopping p-2"></i></a>
+                    <ul class="d-flex justify-content-end align-items-center">
+                        <li class="me-4">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-bell"></i>
+                            </a>
+                        </li>
+                        <li class="me-4">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </li>
+                        <li class="me-4">
+                            <a class="nav-link" href="<?php echo BASE_DIR ?>user">
+                                <i class="fas fa-user"></i>
+                            </a>
 
-                    <a class="nav-link" href="<?php echo BASE_DIR ?>user"><i
-                            class="fa-solid fa-user p-2"></i>Profile</a>
+                        </li>
+                    </ul>
+
+
                 </div>
             </div>
         </nav>
