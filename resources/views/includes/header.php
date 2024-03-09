@@ -24,7 +24,7 @@
         <nav class="navbar bg-body-tertiary shadow-sm">
             <div class="container flex-nowrap">
                 <div class="d-flex">
-                    <a class="navbar-brand" href="#"><i class="fa-brands fa-shopify"></i>shopify</a>
+                    <a class="navbar-brand" href="<?php echo BASE_DIR ?>"><i class="fa-brands fa-shopify"></i>shopify</a>
 
                     <div class="d-none d-md-block">
                         <button id="myDropdownBtn" onclick="myDropdown()" class="btn btn-light">

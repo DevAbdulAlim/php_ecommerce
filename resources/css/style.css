@@ -1,72 +1,211 @@
+/* CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* ---------- */
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(255, 255, 255);
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+main {
+  flex-grow: 1;
 }
 
 /* Login Form */
 ::placeholder {
-    color: rgb(140, 177, 180);
-  }
-  
-  .form-wrapper {
-    margin: 0 auto;
-    margin-top: 100px;
-    width: 400px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    padding: 2rem;
-    border-radius: 10px;
-    background-color: white;
-    border-top: 5px solid rgb(19, 206, 206);
-  }
-  
-  #custom-form h1 {
-    text-align: center;
-    color: rgb(19, 206, 206);
-  }
-  
-  #custom-form input[type="email"],
-  #custom-form input[type="text"],
-  #custom-form textarea,
-  #custom-form input[type="password"] {
-    min-width: 300px;
-    width: 100%;
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-    color: rgb(17, 128, 136);
-    background-color: rgb(210, 246, 246);
-    font-size: 1rem;
-  }
-  #custom-form input[type="email"]:focus,
-  #custom-form input[type="text"]:focus,
-  #custom-form textarea:focus,
-  #custom-from input[type="password"]:focus {
-    border-bottom: 3px solid rgb(19, 206, 206);
-    outline: none;
-  }
-  
-  #custom-form input[type="submit"] {
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    color: white;
-    background-color: rgb(19, 206, 206);
-    font-size: 1rem;
-  }
-  
-  #custom-from input[type="submit"]:hover {
-    color: white;
-    background-color: rgb(9, 172, 172);
-    cursor: pointer;
-  }
-  
-  #custom-form .form_item {
-    padding: 15px;
-  }
-  
+  color: rgb(140, 177, 180);
+}
+
+.form-wrapper {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: white;
+  border-top: 5px solid rgb(19, 206, 206);
+}
+
+#custom-form h1 {
+  text-align: center;
+  color: rgb(19, 206, 206);
+}
+
+#custom-form input[type="email"],
+#custom-form input[type="text"],
+#custom-form textarea,
+#custom-form input[type="password"] {
+  min-width: 300px;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  color: rgb(17, 128, 136);
+  background-color: rgb(210, 246, 246);
+  font-size: 1rem;
+}
+#custom-form input[type="email"]:focus,
+#custom-form input[type="text"]:focus,
+#custom-form textarea:focus,
+#custom-from input[type="password"]:focus {
+  border-bottom: 3px solid rgb(19, 206, 206);
+  outline: none;
+}
+
+#custom-form input[type="submit"] {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  background-color: rgb(19, 206, 206);
+  font-size: 1rem;
+}
+
+#custom-from input[type="submit"]:hover {
+  color: white;
+  background-color: rgb(9, 172, 172);
+  cursor: pointer;
+}
+
+#custom-form .form_item {
+  padding: 15px;
+}
 
 /* Navbar */
 .myDropdown {
@@ -109,3 +248,19 @@ body {
   text-decoration: none;
   color: black;
 }
+
+/* --------------START FOOTER---------------- */
+.footer-links {
+  line-height: 2;
+}
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-links i {
+  margin-right: 0.5rem;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+/* --------------END FOOTER---------------- */
