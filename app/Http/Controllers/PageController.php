@@ -2,6 +2,7 @@
 define('PAGE_DIR', __DIR__ . '/../../../resources/views/');
 
 // Importing Models
+require_once __DIR__ . '/../../Models/Category.php';
 require_once __DIR__ . '/../../Models/Product.php';
 require_once __DIR__ . '/../../Models/User.php';
 
@@ -10,6 +11,7 @@ require_once __DIR__ . '/../Middlewares/auth.php';
 
 class PageController
 {
+    private $categoryModel;
     private $productModel;
     private $userModel;
 
@@ -17,6 +19,7 @@ class PageController
 
     public function __construct($db)
     {
+        $this->categoryModel = new Category($db);
         $this->productModel = new Product($db);
         $this->userModel = new User($db);
         $this->auth = new Auth($db);
@@ -25,7 +28,9 @@ class PageController
     public function home()
     {
         $title = "Home";
-        // Retrieve all products using the Product model
+
+        // Retrieve categories and products
+        $categories = $this->categoryModel->getAllCategories();
         $products = $this->productModel->getAllProducts();
         require_once PAGE_DIR . 'index.php';
     }

@@ -1,17 +1,17 @@
 <?php
 
-class Product
+class Category
 {
     private $conn;
-    private $table_name = "products";
+    private $table_name = "categories";
 
     public function __construct($db)
     {
         $this->conn = $db;
     }
 
-    // Retrieve all products
-    public function getAllProducts()
+    // Retrieve all categories
+    public function getAllCategories()
     {
         $query = "SELECT * FROM " . $this->table_name;
 
@@ -21,7 +21,7 @@ class Product
         return $stmt;
     }
 
-    public function getSingleProducts($id)
+    public function getSingleCategory($id)
     {
         $query = "SELECT * FROM " . $this->table_name . " WHERE id = :id";
         $stmt = $this->conn->prepare($query);
