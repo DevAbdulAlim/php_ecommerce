@@ -13,7 +13,8 @@
             <div class="col-md-3 mb-3">
                 <h5 class="fs-4 mb-3"> Customer Service</h5>
                 <ul class="footer-links">
-                    <li><a href="#"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    <li><a href="<?php echo BASE_DIR ?>contact"><i class="fas fa-chevron-right"></i> Contact Us</a>
+                    </li>
                     <li><a href="#"><i class="fas fa-chevron-right"></i> FAQs</a></li>
                     <li><a href="#"><i class="fas fa-chevron-right"></i> Returns</a></li>
                     <li><a href="#"><i class="fas fa-chevron-right"></i> Shipping</a></li>
@@ -51,7 +52,7 @@
 <!-- Bootstrap Script -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
-    </script>
+</script>
 
 <!-- Main Script -->
 <script src="<?php echo BASE_DIR; ?>resources/js/script.js"></script>
